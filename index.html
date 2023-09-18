@@ -5,7 +5,9 @@ table, th, td {
 }
 </style>
 <html lang="en">
+
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <center>
     <title>Home</title>
     <meta charset="UTF-8" />
@@ -14,21 +16,44 @@ table, th, td {
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+
+  
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">About</a>
-      <a href="/page3.html" >Contact</a>
-    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Webpage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">Contact</a>
+        </li>
+    </div>
+  </div>
+</nav>
+    
     <main>
       <h1>Home</h1>
       <h2 class="med" >Hello Welcome to this web page!</h2>
     </center>
-    </main>
-    <section>
-      <h3>This is a test for different mechanics for html</h3>
+   
+  </main>
+   
+  
+  <section>
+      <h3 class="sectionheaderstyle">This is a test for different mechanics for html</h3>
       <p>Here is a table that displays things...</p>
       <p> Like videogames and their publishers!</p>
+
         <table style=" width:100%" >
           <tr>
             <th style="width:20%"> Cover Art</th>
@@ -50,7 +75,12 @@ table, th, td {
           <td> Ghost of Tsushima</td>
           <td>Sucker Punch Productions</td>
       </table>
+
     </section>
+
     <footer> All artwork belongs to their respective owners</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+
 </html>

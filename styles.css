@@ -9,6 +9,7 @@ body {
   background-color: white;
 }
 
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px rgb(7, 7, 7);
-  background-color: rgb(235, 233, 234);
+  background-color: rgb(192, 172, 182);
 }
 
 nav a {
@@ -33,8 +34,7 @@ nav a {
 
 nav a[aria-current='page'] {
   color: rgb(7, 7, 7);
-  border: solid 4px black;
-  background-color: #fffa96;
+  background-color: #rgb(192, 172, 182);
 }
 
 main {
@@ -48,6 +48,13 @@ h1 {
 }
 .med{
   font-size: medium;
+}
+
+.sectionheaderstyle{
+font-family:fantasy ;
+font-size: medium;
+padding-left: 30%;
+margin-bottom: 10%;
 }
 
 #footer {
