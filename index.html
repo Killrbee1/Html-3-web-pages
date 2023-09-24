@@ -15,6 +15,9 @@ table, th, td {
 
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
   </head>
 
   
@@ -36,6 +39,9 @@ table, th, td {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="page3.html">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link" href="page4.html">Calculator</a>
+          </li>
         </li>
     </div>
   </div>
@@ -77,12 +83,22 @@ table, th, td {
           <td>Sucker Punch Productions</td>
       </table>
         </div>
-
+        <footer> All artwork belongs to their respective owners</footer>
     </section>
   </div>
-
-    <footer> All artwork belongs to their respective owners</footer>
-
+  <div class="container text-center">
+  <article id = "intro">
+    <h4>Introduction</h4>
+<p>Modern gaming has undergone a profound transformation in recent years, driven by rapid technological advancements and shifting player preferences. The lines between reality and virtual worlds have blurred as graphics have reached stunning levels of realism, and immersive experiences like virtual reality (VR) and augmented reality (AR) have become more accessible. Online multiplayer gaming has exploded, creating vast virtual communities where players from across the globe can connect and compete. Esports, once a niche interest, has evolved into a mainstream phenomenon, with professional gamers and massive tournaments drawing huge audiences. Furthermore, the gaming industry has embraced diverse storytelling, addressing social issues and offering players thought-provoking narratives. With the advent of cloud gaming services and the potential of emerging technologies like blockchain and artificial intelligence, the future of modern gaming promises even more innovation, interactivity, and excitement for players of all ages.
+  </p>
+</article>
+<button id = "curious" class="btn btn-dark"> Read More/Hide </button>
+  </div>
+<script type="text/javascript">
+  $('#curious').click(function (){
+    $('#intro').toggle();
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 
