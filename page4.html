@@ -55,8 +55,9 @@
       <br />
       <br />
    <button id = "calc" class="btn btn-info">Calculate</button>
+   <button id = "Clear" class="btn btn-warning">Clear</button>
 
-   <p id = "result"></p>
+   <p id = "result" style="strong"></p>
   </main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -68,7 +69,17 @@
     let revenue = $('#rev').val();
     let expenses = $('#exp').val();
     let Result = (((revenue - expenses -investment) / investment) * 100);
-    $('#result').text(Result);  
+    if (Result <= 0) {
+      $('#result').text("You are losing money or entered values wrong, Please try again.");
+    }else
+    {$('#result').text("Your result is $" + Result.toFixed(2));}  
+  
+  });
+  $('#Clear').click(function (){
+    $('#result').text('');
+    $('#inv').val('');
+    $('#rev').val('');
+    $('#exp').val('');
   });
 });
 </script>
